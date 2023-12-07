@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Madhavas_style.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+    <!-- song list file -->
+
+    <title>Bhajan Player</title>
+
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    @media screen and (max-width: 390px){
+    header .master_play .wave {
+    right: 44% !important;}
+}
+    header .song_side nav .search .search_results .card{
+    background: rgba(0, 5, 30, 0.7);
+}
+  </style>
+  <body>
+  <header>
+    <div class="menu_side">
+      <h6 id="menu_list_active_button"><i class="bi bi-music-note-list"></i></h6>
+      <h1>Bhajan Player</h1>
+      <div class="playlist">
+        <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Recommended </h4>
+        <h4><span></span><i class="bi bi-music-note-beamed"></i> Last Listening</h4>
+        <h4><span></span><i class="bi bi-music-note-beamed"></i> Favourites</h4>
+      </div>
+      <div class="menu_song">
+        <li class="songItem">
+        <span>01</span>
+        <img src="img/Agnideva_Pr.jpg" alt="Image not showing">
+        <h5>Bhoga Arti Bhaja Bhakata Vatsala<br> 
+        <div class="subtitle">Agnideva Das</div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+      </li>
+    
+      <li class="songItem">
+        <span>02</span>
+        <img src="img/Agnideva_Pr.jpg" alt="Image not showing">
+        <h5>Bol Hari Bol<br> 
+        <div class="subtitle">Agnideva Das</div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+      </li>
+
+      <li class="songItem">
+        <span>03</span>
+        <img src="img/Agnideva_Pr.jpg" alt="Image not showing">
+        <h5>Mahamantra_Beautiful Chant<br> 
+        <div class="subtitle">Agnideva Das</div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+      </li>
+
+      <li class="songItem">
+        <span>04</span>
+        <img src="img/Agnideva_Pr.jpg" alt="Image not showing">
+        <h5>Hare Krishna Mantra-Kuruksetra<br> 
+        <div class="subtitle">Agnideva Das</div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+      </li>
+
+      <li class="songItem">
+        <span>05</span>
+        <img src="img/Agnideva_Pr.jpg" alt="Image not showing">
+        <h5>Hari Hari biphale janama goainu<br> 
+        <div class="subtitle">Agnideva Das</div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+      </li>
+
+      <li class="songItem">
+        <span>06</span>
+        <img src="img/Agnideva_Pr.jpg" alt="Image not showing">
+        <h5>Kirtans From The Sacred Forest<br> 
+        <div class="subtitle">Agnideva Das</div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+      </li>
+
+      <li class="songItem">
+        <span>07</span>
+        <img src="img/Agnideva_Pr.jpg" alt="Image not showing">
+        <h5>Parama Karuna<br> 
+        <div class="subtitle">Agnideva Das</div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+      </li>
+
+      <li class="songItem">
+        <span>08</span>
+        <img src="img/Agnideva_Pr.jpg" alt="Image not showing">
+        <h5>Parama Karuna<br> 
+        <div class="subtitle">Agnideva Das</div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+      </li>
+      
+    </div>
+      
+    </div>
+
+    <div class="song_side">
+      <nav>
+        <ul>
+          <a href="/"><li>Discover</li></a>
+          <li>MY LIBRARY</li>
+          <li style="visibility:hidden">RADIO</li>
+        </ul>
+        <div class="search">
+          <i class="bi bi-search"></i>
+          <input type="text" id="search" name="Search" placeholder="Search bhajan...">
+          <div class="search_results">
+            <!-- <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a>
+            
+            <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a>
+
+            <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a>
+
+            <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a>
+
+            <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a>
+
+            <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a> -->
+          </div>
+        </div>
+        <div class="user">
+          <img src="img/a.jpg" alt="">
+        </div>
+      </nav>
+      <div class="content">
+        <img src="img/Madhavas.jpg" id="Artists_img" alt="">
+        <h4 id="Artists_name">Madhavas Rock Band</h4>
+      </div>
+
+      <div class="PlayListBody" id="PlayListBody">
+        <div class="main" >
+          <!-- top section -->
+          <!-- <div class="top_section">
+              <h5>Madhavas</h5>
+            </div> -->
+        
+        
+          <div class="tracks">
+          
+          <!-- list of song will add here from 'song_list.js' file -->
+            
+          </div>
+        
+        </div>
+        
+        
+      
+      </div>
+
+
+    
+    </div>
+
+
+    <div class="master_play">
+      <div class="wave" id="wave">
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+      </div>
+      <img src="img/Madhavas.jpg" alt="" id="poster_master_play">
+      <h5 id="title">
+        Govind Bolo 
+        <div class="subtitle">Madhavas</div></h5>
+
+        <div class="icon">
+          <i class="bi shuffle bi-music-note-beamed">next</i>
+          <i class="bi bi-skip-start-fill" id="back"></i>
+          <i class="bi bi-play-fill" id="masterPlay"></i>
+          <i class="bi bi-skip-end-fill" id="next"></i>
+          <a href="" download id="download_music"><i class="bi bi-cloud-arrow-down-fill"></i></a>
+        </div>
+        <span id="currentStart">0:00</span>
+        <div class="bar">
+          <input type="range" id="seek" min="0" max="100">
+          <div class="bar2" id="bar2"></div>
+          <div class="dot"></div>
+        </div>
+        <span id="currentEnd">00:30</span>
+        <div class="vol">
+          <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+          <input type="range" min="0" max="100" id="vol">
+          <div class="vol_bar" id="vol_bar"></div>
+          <div class="dot" id="vol_dot"></div>
+        </div>
+    </div>
+  </header>
+  <script>
+  let menu_list_active_button = document.getElementById('menu_list_active_button');
+    let menu_side = document.getElementsByClassName('menu_side')[0];
+    let w = window.innerWidth;
+
+    if(w<=1000){
+      menu_list_active_button.style.opacity = '1';
+    }
+    if(w<=680){
+      document.getElementsByName('Search')[0].placeholder='Search';
+    }
+    menu_list_active_button.addEventListener('click', ()=> {
+        menu_side.style.transform = "unset";
+        menu_list_active_button.style.opacity = 0;
+    });
+    
+    let song_sides = document.getElementsByClassName('song_side')[0];
+    song_sides.addEventListener('click', ()=> {
+      if(w <= 1000){
+        menu_side.style.transform = "translateX(-100%)";
+        menu_list_active_button.style.opacity = 1;
+       
+      } 
+    });
+    </script>
+  <script src="Madhavas_app.js"></script>
+
+  </body>
+</html>
